@@ -24,7 +24,7 @@ jobs:
         uses: azure/arm-deploy@v1
         with:
           scope: subscription
-          location: westeurope
+          region: westeurope
           subscriptionId: ${{ env.AZURE_SUBSCRIPTION_ID }}
           resourceGroupName: ${{ env.AZURE_RESOURCE_GROUP }}
           template: $GITHUB_WORKSPACE/azuredeploy.json
